@@ -1,0 +1,17 @@
+{
+  "name": "wb_portfolio",
+  "version": "1.0.0",
+  "description": "website_portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Milan_Marijanovic",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-sass": "^3.1.0"
+  }
+}
