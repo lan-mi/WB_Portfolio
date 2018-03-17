@@ -1,8 +1,12 @@
-.section, .section1 {
-  background-color: red;
-  border: 15px inset blue;
-  height: 500px;
-  width: 500px; }
+#first, #second, #third {
+  height: 100%;
+  width: 100%; }
 
-.section1 {
-  background-color: blue; }
+#first {
+  background: url(../img/125.jpg) center center no-repeat; }
+
+#second {
+  background-color: yellow; }
+
+#third {
+  background-color: #666666; }
