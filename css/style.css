@@ -1,0 +1,94 @@
+/* Sendwich menu 3 bars */
+
+.menu1,
+.menu2,
+.menu3 {
+    background-color: #000;
+    height: 5px;
+    margin: 5px;
+    width: 30px;
+    transition: 0.4s;
+
+}
+
+/* Sendwich menu div */
+
+.menu-toggle {
+    cursor: pointer;
+    float: right;
+    margin: 35px 20px;
+
+}
+
+/* Fullscreen nav container */
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+/* Fullscreen nav content */
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Fullscreen nav links */
+
+.overlay a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* Fullscreen nav hover and focus */
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Fullscreeen close button */
+
+.overlay .closebtn {
+    position: absolute;
+    top: 1px;
+    left: 15px;
+    font-size: 60px;
+}
+
+.col-md-12 {
+    height: 1500px;
+    width: 1900px;
+    background-color: indianred;
+    border: 5px solid red;
+    margin-top: -105px;
+    z-index: -1;
+}
+
+/* Fullscreen nav mobile */
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        left: 35px;
+    }
