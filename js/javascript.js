@@ -6,6 +6,12 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
 
-$("#test").click(function () {
-    $("p").remove();
+$(function () {
+    $('#test').hover(function () {
+            $('p').fadeOut('slow');
+        },
+        function () {
+            $('p').fadeIn('slow');
+        }
+    );
 });
