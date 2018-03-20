@@ -1,0 +1,112 @@
+/* Sendwich menu 3 bars */
+.menu1,
+.menu2,
+.menu3 {
+  background-color: #000;
+  height: 6px;
+  margin: 6px;
+  width: 40px; }
+
+/* Sendwich menu div */
+.menu-toggle {
+  cursor: pointer;
+  float: right;
+  position: fixed;
+  top: 5%;
+  left: 5%; }
+
+#test {
+  margin: 150px;
+  position: fixed;
+  z-index: 5;
+  color: red;
+  background-color: #fff; }
+
+p {
+  top: 4.7em;
+  position: relative;
+  font-size: 26px; }
+
+/* Fullscreen nav container */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s; }
+
+/* Fullscreen nav content */
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px; }
+
+/* Fullscreen nav links */
+.overlay a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s; }
+
+/* Fullscreen nav hover and focus */
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1; }
+
+/* Fullscreeen nav close button */
+.overlay .closebtn {
+  margin: 3px 27px;
+  font-size: 60px;
+  right: 0;
+  position: absolute; }
+
+/* CSS for body element */
+body {
+  margin: 0; }
+
+/* Landing page DIV class body */
+.body {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -3; }
+
+/* Landing page DIV with opacity overlay */
+.now {
+  height: 95%;
+  width: 95%;
+  background: #000;
+  opacity: 0.5;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: -1; }
+
+/* Landing page background image */
+img {
+  background-size: cover;
+  max-width: 120%;
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+  z-index: -2; }
+
+/* Fullscreen nav mobile */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px; }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    left: 35px; } }
