@@ -41,7 +41,7 @@ $(document).ready(function () {
 
 /* main menu text animation */
 
-var textArray = ["learning!", "new technologies!", "web development!", "web design!"];
+var textArray = ["learning!", "new technologies!", "web development!"];
 var index = 0;
 setInterval(function () {
     $("#main-animate").animate({
