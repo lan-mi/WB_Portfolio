@@ -6,14 +6,6 @@
 
 $color: #ffff00
 
-/* @extend for .active classes */
-
-%active-menu
-    background-color: #000
-    height: 5px
-    margin: 6px
-    transition: 0.5s ease-in-out
-
 /* Sendwich menu 3 bars */
 
 #menu-toggle
@@ -24,31 +16,16 @@ $color: #ffff00
     position: fixed
     width: 50px
     
-/* Sendwich menu */
+/* Sandwich menu */
 
 .menu1,
 .menu2,
 .menu3
-    border-top: 2px solid #fff
-    border-bottom: 2px solid #fff
+    border-top: 1px solid red
+    border-bottom: 1px solid red
     height: 6px
     margin: 6px 
-    transition: 0.5s ease-in-out
-    width: 38px
-    
-/* Sendwich menu Jquery addClass */
-
-.active1
-    @extend %active-menu
-    width: 25px
-
-.active2
-    @extend %active-menu    
-    width: 15px
-
-.active3
-    @extend %active-menu
-    width: 30px
+    width: 40px
     
 /* Nav menu for active links Jquery */
 
@@ -120,7 +97,7 @@ body
     
 .now
     background: #000
-    background-color: rgba(0,0,0,0.45)
+    background-color: rgba(0,0,0,0.7)
     border: 1px solid #000
     height: 98.5vh
     left: 50%
@@ -150,6 +127,13 @@ img
     top: 3%;
     right: 50%  
     
+.name    
+    color: #fff
+    font-family: 'Alegreya SC', serif;
+    position: absolute
+    top: 3%;
+    right: 4%
+    
 .name-border
     width: 270px
     height: 90px
@@ -157,25 +141,25 @@ img
     right: 2.5%
     top: 2%
     
-#top-border
-    width: 80%
+.top-border
+    width: 25%
     border-top: 1px solid red
     
-#right-border
+.right-border
     height: 25%
     border-right: 1px solid red
     position: absolute
     right: 0
     bottom: 0
     
-#bottom-border
-    width: 70%
+.bottom-border
+    width: 25%
     bottom: 0
     right: 0
     border-bottom: 1px solid red
     position: absolute
     
-#left-border
+.left-border
     height: 25%
     border-left: 1px solid red
     position: absolute
@@ -236,44 +220,6 @@ img
     margin: 15px
     right: 5%
     position: absolute
- 
-/* Fullscreen nav mobile */
-
-@media screen and (max-height: 770px)
-    .overlay a
-        font-size: 20px
-    
-    .overlay .closebtn
-        font-size: 40px
-        top: 15px
-        right: 35px
-
-/* Fullscreen nav mobile */
-
-@media screen and (max-height: 670px)
-    .overlay a
-        font-size: 16px
-    
-    .overlay .closebtn
-        font-size: 35px
-        top: 12px
-        right: 25px
-        
-    .col-md-3
-    margin: 15% 2% 2% 2%
-    text-align: center
-    
-/* Landing page text mobile */
-
-@media screen and (max-height: 670px)
-    #main-text
-        h1
-            font-size: 26px
-        p
-            font-size: 16px
-    
-    #main-animate
-        font-size: 30px
             
 /* About page */
 /* Two divs */
@@ -323,9 +269,49 @@ img
     float: left
     left: 35%
     
-/* About page - two divs alignment */
+/* Portfolio page */
+
+.my-work
+    color: #fff
+    font-family: 'Montserrat', sans-serif;
+    position: relative
+    text-align: center
+    margin: 80px 0 0 0
+    
+.post-right img
+    max-width: 300px
+    max-height: 300px
+    position: absolute
+    border: 2px solid #000
+    border-radius: 5px
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 2%
+
+.port-left
+    color: #fff
+    margin: 0 5%
+    text-align: center
+    padding: 0 5%
+    
+.port-left h3
+    color: red
+    
+.port-work
+    margin-bottom: 10%
+  
+/* Media screen */
         
-@media screen and (max-width: 700px)
+@media screen and (max-width: 1320px)
+    .name-border
+        right: 1.5%
+        
+    .name
+        right: 5%
+        
+@media screen and (max-width: 768px)
     #about-left,
     #about-right
         width: 75vw
@@ -348,15 +334,63 @@ img
         right: 0
         width: 165px
         
-@media screen and (max-width: 1320px)
-    .name-border
-        right: 1.5%
+    .name h3
+        font-size: 16px
         
-@media screen and (max-width: 700px)
-    .name-border
-        right: 0
+    .my-work h1
+        font-size: 22px
+        
+    .overlay a
+        font-size: 20px
+    
+    .overlay .closebtn
+        font-size: 40px
+        top: 15px
+        right: 35px
 
+/* Fullscreen nav mobile */
 
+@media screen and (max-width: 670px)
+    .overlay a
+        font-size: 16px
+    
+    .overlay .closebtn
+        font-size: 35px
+        top: 12px
+        right: 25px
+        
+    .col-md-3
+    margin: 15% 2% 2% 2%
+    text-align: center
+        
+    .my-work h1
+        font-size: 18px
+        
+    .my-work
+        margin: 60px 0 0 0
+    
+    #main-text
+        h1
+            font-size: 24px
+            
+    #main-text
+        h3
+            font-size: 18px
+            
+    #main-animate
+        font-size: 19px
+        
+    .port-work
+        margin-bottom: -5%
+        
+    .port-left p
+        font-size: 12px
+        
+    .port-left
+        margin: 0
+        padding: 0
+            
+    
     
     
     
