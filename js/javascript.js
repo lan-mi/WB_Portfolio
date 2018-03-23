@@ -57,7 +57,48 @@ setInterval(function () {
     });
 }, 3000);
 
-/* footer reserved rights function - get year */
+/* Animate name on page load */
 
-var a = new Date();
-var b = document.getElementById("date").innerHTML = a.getFullYear();
+$('#a').animate({
+    right: 200
+});
+
+
+/* Animate name div */
+
+var someajaxtext = 'Milan Marijanovic';
+
+$(document).ready(function () {
+
+    var dv = $('#name');
+    dv.text("");
+    $({
+        count: 0
+    }).animate({
+        count: someajaxtext.length
+    }, {
+        duration: 2500,
+        step: function () {
+            dv.text(someajaxtext.substring(0, Math.round(this.count)));
+        }
+    });
+
+});
+
+$(document).ready(function () {
+
+    $('#name').delay(3000).animate({
+        right: '4%'
+    });
+
+});
+
+
+
+
+
+
+
+
+
+/* */
