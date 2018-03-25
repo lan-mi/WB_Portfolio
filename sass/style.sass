@@ -88,6 +88,7 @@ body
 /* Landing page DIV class body */
 
 .body
+    background-color: #80ffbf
     height: 100vh
     width: 100vw
     position: fixed
@@ -272,8 +273,8 @@ img
 /* Portfolio page */
 
 %port
-    max-height: 200px
-    max-width: 200px
+    height: 200px
+    width: 200px
     position: relative
     border: 2px solid #000
     border-radius: 5px
@@ -282,6 +283,7 @@ img
     margin-left: auto; 
     margin-right: auto;
     float: left
+    display: block
 
 .my-work
     color: #fff
@@ -293,8 +295,6 @@ img
 .port-right img,
 .port-right1 img, 
 .port-right2 img,
-.port-right3 img,  
-.port-right4 img
     @extend %port
 
 .photo
@@ -302,6 +302,13 @@ img
     background-color: red
     height: 200px
     width: 200px
+    
+.opacity
+    @extend %port
+    background-color: #000
+    height: 200px
+    width: 200px
+    opacity: 0.5
 
 .portfolio
     margin: 0 auto
@@ -310,17 +317,20 @@ img
     display: flex
     align-items: center
     margin: 0 auto
-    
+ 
 .port-left h3
     color: red
     text-align: center
+    
+.porto-text
+    margin-top: 10%
     
 .port-left p
     color: #fff
     text-align: center
     
 .port-work
-    margin-bottom: 10%
+    margin-bottom: 5%
   
 /* Media screen */
         
@@ -330,6 +340,25 @@ img
         
     .name
         right: 5%
+        
+    .port-work
+        margin-bottom: 10%
+        
+    .port-right img,
+    .port-right1 img, 
+    .port-right2 img,
+    .port-right3 img,  
+    .port-right4 img
+        max-height: 90px
+        max-width: 90px
+        
+    .photo
+        height: 90px
+        width: 90px
+        
+    .opacity
+        height: 90px
+        width: 90px
         
 @media screen and (max-width: 768px)
     #about-left,
@@ -368,20 +397,11 @@ img
         top: 15px
         right: 35px
         
-    .port-right img,
-    .port-right1 img, 
-    .port-right2 img,
-    .port-right3 img,  
-    .port-right4 img
-        max-height: 90px
-        max-width: 90px
+    .port-work
+        margin-bottom: 15%
         
-    .photo
-        height: 90px
-        width: 90px
-
-        
-    
+    .my-work
+        margin-bottom: 10%
 
 @media screen and (max-width: 670px)
     .overlay a
@@ -400,7 +420,7 @@ img
         font-size: 18px
         
     .my-work
-        margin: 60px 0 0 0
+        margin: 60px 0 0 10px
     
     #main-text
         h1
@@ -414,7 +434,7 @@ img
         font-size: 19px
         
     .port-work
-        margin-bottom: -5%
+        margin-bottom: 1%
         
     .port-left p
         font-size: 12px
@@ -423,18 +443,24 @@ img
         margin: 0
         padding: 0
         
-@media screen and (max-height: 768px)
     .port-right img,
     .port-right1 img, 
     .port-right2 img,
     .port-right3 img,  
     .port-right4 img
-        max-height: 90px
-        max-width: 90px
+        max-height: 80px
+        max-width: 80px
         
     .photo
-        height: 90px
-        width: 90px
+        height: 80px
+        width: 80px
+        
+    .opacity
+        height: 80px
+        width: 80px
+        
+    .porto-text
+        margin-top: 0
     
             
     
