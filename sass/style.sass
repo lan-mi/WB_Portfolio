@@ -88,11 +88,11 @@ body
 /* Landing page DIV class body */
 
 .body
-    background-color: #80ffbf
     height: 100vh
     width: 100vw
-    position: fixed
+    position: absolute
     z-index: -3
+    overflow: hidden
    
 /* Landing page DIV with opacity overlay */
     
@@ -116,7 +116,7 @@ img
     max-width: 120%
     min-height: 100%
     overflow: hidden
-    position: fixed
+    position: absolute
     z-index: -2
     
 /* My name */
@@ -128,12 +128,20 @@ img
     top: 3%;
     right: 50%  
     
-.name    
-    color: #fff
+.name   
     font-family: 'Alegreya SC', serif;
     position: absolute
     top: 3%;
     right: 4%
+    z-index: 99
+    
+.name h3
+    color: #fff
+    text-decoration: none
+    padding-top: 5px
+    
+.name a:hover
+    text-decoration: none
     
 .name-border
     width: 270px
@@ -272,65 +280,23 @@ img
     
 /* Portfolio page */
 
-%port
-    height: 200px
-    width: 200px
-    position: relative
-    border: 2px solid #000
-    border-radius: 5px
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto;
-    float: left
-    display: block
-
 .my-work
     color: #fff
     font-family: 'Montserrat', sans-serif;
     position: relative
     text-align: center
     margin: 80px 0 0 0
-    
-.port-right img,
-.port-right1 img, 
-.port-right2 img,
-    @extend %port
-
-.photo
-    @extend %port
-    background-color: red
-    height: 200px
-    width: 200px
-    
-.opacity
-    @extend %port
-    background-color: #000
-    height: 200px
-    width: 200px
-    opacity: 0.5
 
 .portfolio
     margin: 0 auto
     
-.porto
-    display: flex
-    align-items: center
-    margin: 0 auto
- 
-.port-left h3
-    color: red
-    text-align: center
-    
-.porto-text
-    margin-top: 10%
-    
-.port-left p
+.port-left
     color: #fff
-    text-align: center
+    top: 20%
     
-.port-work
-    margin-bottom: 5%
+.img-box img
+    height: 100px
+    width: 100px
   
 /* Media screen */
         
@@ -344,21 +310,6 @@ img
     .port-work
         margin-bottom: 10%
         
-    .port-right img,
-    .port-right1 img, 
-    .port-right2 img,
-    .port-right3 img,  
-    .port-right4 img
-        max-height: 90px
-        max-width: 90px
-        
-    .photo
-        height: 90px
-        width: 90px
-        
-    .opacity
-        height: 90px
-        width: 90px
         
 @media screen and (max-width: 768px)
     #about-left,
@@ -435,29 +386,6 @@ img
         
     .port-work
         margin-bottom: 1%
-        
-    .port-left p
-        font-size: 12px
-        
-    .port-left
-        margin: 0
-        padding: 0
-        
-    .port-right img,
-    .port-right1 img, 
-    .port-right2 img,
-    .port-right3 img,  
-    .port-right4 img
-        max-height: 80px
-        max-width: 80px
-        
-    .photo
-        height: 80px
-        width: 80px
-        
-    .opacity
-        height: 80px
-        width: 80px
         
     .porto-text
         margin-top: 0
