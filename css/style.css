@@ -310,7 +310,7 @@ img {
 @media screen and (max-width: 768px) {
   #about-left,
   #about-right {
-    width: 75vw; }
+    width: 90vw; }
   #about-right p,
   #about-left p {
     font-size: 12px; }
