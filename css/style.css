@@ -115,7 +115,7 @@ img {
   font-family: 'Alegreya SC', serif;
   position: absolute;
   top: 3%;
-  right: 4%;
+  right: 10%;
   z-index: 99; }
 
 .name h3 {
@@ -202,26 +202,28 @@ img {
 
 /* Contact Page */
 .contact-top {
-  height: 15vh;
-  position: relative;
-  background-color: red;
-  opacity: 0.8; }
+  text-align: center;
+  top: 15vh;
+  color: #fff; }
 
 .contact-left {
-  position: relative;
-  background-color: red;
+  height: 20vh;
+  width: 50%;
+  background-color: #ff0000;
   opacity: 0.5;
-  text-align: center;
-  color: #fff;
-  margin-top: 15vh; }
+  position: relative;
+  top: 20vh;
+  z-index: 4;
+  text-align: center; }
 
 .contact-right {
-  position: relative;
-  background-color: blue;
+  height: 20vh;
+  width: 50%;
+  background-color: #0066ff;
   opacity: 0.5;
-  text-align: center;
-  color: #fff;
-  margin-top: 15vh; }
+  position: relative;
+  top: 20vh;
+  z-index: 4; }
 
 /*  Contact page - footer - reserved rights */
 .rights {
@@ -233,44 +235,6 @@ img {
   text-align: center; }
 
 /* About page */
-/* Two divs */
-#about-left p, #about-right p {
-  color: #fff;
-  font-size: 18px;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle; }
-
-#about-left, #about-right {
-  display: table;
-  height: 35vh;
-  position: fixed;
-  width: 35vw; }
-
-#about-left {
-  left: 12%;
-  top: 12%; }
-
-#about-right {
-  bottom: 12%;
-  right: 12%; }
-
-#about-right h4 {
-  font-family: 'Montserrat', sans-serif;
-  color: #fff;
-  font-size: 22px;
-  position: absolute;
-  float: left;
-  left: 41%; }
-
-#about-left h4 {
-  font-family: 'Montserrat', sans-serif;
-  color: #fff;
-  font-size: 22px;
-  position: absolute;
-  float: left;
-  left: 35%; }
-
 /* Portfolio page */
 .image {
   height: 150px;
@@ -299,11 +263,9 @@ img {
   color: #fff; }
 
 /* Media screen */
-@media screen and (max-width: 1320px) {
+@media screen and (max-width: 1200px) {
   .name-border {
     right: 1.5%; }
-  .name {
-    right: 5%; }
   .port-work {
     margin-bottom: 10%; } }
 
@@ -334,9 +296,13 @@ img {
     top: 15px;
     right: 35px; }
   .port-work {
-    margin-bottom: 15%; } }
+    margin-bottom: 15%; }
+  .contact-left {
+    width: 100%; }
+  .contact-right {
+    width: 100%; } }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 576px) {
   .overlay a {
     font-size: 16px; }
   .overlay .closebtn {
