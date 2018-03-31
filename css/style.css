@@ -235,6 +235,27 @@ img {
   text-align: center; }
 
 /* About page */
+.about {
+  margin-top: 15%; }
+
+.about-right {
+  font-family: 'Alegreya SC', serif;
+  color: #fff;
+  text-align: center;
+  padding: 1px 5px;
+  margin-top: 40vh;
+  font-size: 18px; }
+
+.about-left {
+  font-family: 'Alegreya SC', serif;
+  color: #fff;
+  text-align: center;
+  font-size: 18px; }
+
+.about-right h3,
+.about-left h3 {
+  font-family: 'Montserrat', sans-serif; }
+
 /* Portfolio page */
 .image {
   height: 150px;
@@ -270,15 +291,6 @@ img {
     margin-bottom: 10%; } }
 
 @media screen and (max-width: 768px) {
-  #about-left,
-  #about-right {
-    width: 90vw; }
-  #about-right p,
-  #about-left p {
-    font-size: 12px; }
-  #about-right h4,
-  #about-left h4 {
-    font-size: 16px; }
   #name {
     font-size: 16px;
     right: 30%; }
@@ -300,7 +312,16 @@ img {
   .contact-left {
     width: 100%; }
   .contact-right {
-    width: 100%; } }
+    width: 100%; }
+  .about-right {
+    margin-top: 1vh;
+    font-size: 10px; }
+  .about-left {
+    margin-top: 8vh;
+    font-size: 10px; }
+  .about-right h3,
+  .about-left h3 {
+    font-size: 16px; } }
 
 @media screen and (max-width: 576px) {
   .overlay a {
