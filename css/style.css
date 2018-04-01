@@ -257,19 +257,6 @@ img {
   font-family: 'Montserrat', sans-serif; }
 
 /* Portfolio page */
-.image {
-  height: 150px;
-  width: 150px;
-  position: relative;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  z-index: 9; }
-
-.text-center {
-  margin: 2px; }
-
 .text-center h2 {
   color: #fff;
   font-family: 'Montserrat', sans-serif; }
@@ -284,6 +271,36 @@ img {
   padding-bottom: 100px;
   height: 80%;
   width: 90%; }
+
+#img-a, #img-b, #img-c, #img-d, #img-e {
+  background-position: center;
+  background-size: contain;
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  border: 2px solid #000;
+  border-radius: 5px; }
+
+#img-a {
+  background-image: url(../img/img22.png); }
+
+#img-b {
+  background-image: url(../img/img23.jpg); }
+
+#img-c {
+  background-image: url(../img/img24.jpg); }
+
+#img-d {
+  background-image: url(../img/img25.jpg); }
+
+#img-e {
+  background-image: url(../img/img26.jpg); }
+
+.layer {
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7; }
 
 /* Media screen */
 @media screen and (max-width: 1200px) {
@@ -330,10 +347,7 @@ img {
   .text-center h3 {
     font-size: 16px; }
   .portfolio {
-    margin-top: 50px; }
-  .image {
-    height: 60px;
-    width: 60px; } }
+    margin-top: 50px; } }
 
 @media screen and (max-width: 576px) {
   .overlay a {
@@ -354,9 +368,6 @@ img {
     margin-bottom: 1%; }
   .porto-text {
     margin-top: 0; }
-  .image {
-    height: 60px;
-    width: 60px; }
   .text-center h2 {
     font-size: 14px; }
   .text-center h3 {

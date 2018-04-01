@@ -282,19 +282,6 @@ img
     font-family: 'Montserrat', sans-serif;
     
 /* Portfolio page */
-
-.image
-    height: 150px
-    width: 150px
-    position: relative
-    left: 0
-    bottom: 0
-    right: 0
-    margin: auto
-    z-index: 9
-    
-.text-center
-    margin: 2px
     
 .text-center h2
     color: #fff
@@ -311,16 +298,40 @@ img
     height: 80%
     width: 90%
     
-.demo-beta
-    background-image: url("img/img26.jpg")
-    height: 150px
-    width: 150px
-    position: relative
-    left: 0
-    bottom: 0
-    right: 0
-    margin: auto
-    z-index: 9
+%images
+    background-position: center
+    background-size: contain
+    height: 200px
+    width: 200px
+    display: inline-block
+    border: 2px solid #000
+    border-radius: 5px
+    
+#img-a
+    @extend %images
+    background-image: url(../img/img22.png)
+    
+#img-b
+    @extend %images
+    background-image: url(../img/img23.jpg)
+    
+#img-c
+    @extend %images
+    background-image: url(../img/img24.jpg)
+    
+#img-d
+    @extend %images
+    background-image: url(../img/img25.jpg)
+    
+#img-e
+    @extend %images
+    background-image: url(../img/img26.jpg)
+    
+.layer
+    background-color: #000
+    height: 100%
+    width: 100%
+    opacity: 0.7
     
 /* Media screen */
         
@@ -385,10 +396,6 @@ img
         
     .portfolio
         margin-top: 50px
-        
-    .image
-        height: 60px
-        width: 60px
 
 @media screen and (max-width: 576px)
     .overlay a
@@ -419,10 +426,6 @@ img
         
     .porto-text
         margin-top: 0
-        
-    .image
-        height: 60px
-        width: 60px
         
     .text-center h2
         font-size: 14px
