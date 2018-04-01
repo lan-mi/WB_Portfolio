@@ -144,14 +144,27 @@ $(document).ready(function () {
 
 /*  ----------------- */
 
-
+$(document).ready(function () {
+    $('.image').hover(function () {
+        $(this).animate({
+            opacity: "1"
+        }, 200);
+    }, function () {
+        $(this).animate({
+            opacity: "0.5"
+        }, 200);
+    });
+});
 
 
 
 /* */
 
-
-
+$(document).ready(function () {
+    $('.image').animate({
+        opacity: "0.5",
+    });
+});
 
 
 

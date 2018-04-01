@@ -4,7 +4,7 @@
 
 /* variables */
 
-$color: #ffff00
+$color: #818181
 
 /* Sendwich menu 3 bars */
 
@@ -59,7 +59,7 @@ $color: #ffff00
 /* Fullscreen nav links */
 
 .overlay a
-    color: #818181
+    color: $color
     display: block
     font-size: 36px
     padding: 10px
@@ -287,28 +287,41 @@ img
     height: 150px
     width: 150px
     position: relative
-    top: 5vh
     left: 0
     bottom: 0
     right: 0
     margin: auto
     z-index: 9
     
-#image
-    background-color: #000
-    
-.space
-    height: 15vh
-    
 .text-center
     margin: 2px
     
 .text-center h2
     color: #fff
+    font-family: 'Montserrat', sans-serif;
     
 .text-center h3
     color: #fff
-
+    font-family: 'Alegreya SC', serif;
+    margin-bottom: 15vh
+    
+.portfolio
+    margin-top: 100px
+    padding-bottom: 100px
+    height: 80%
+    width: 90%
+    
+.demo-beta
+    background-image: url("img/img26.jpg")
+    height: 150px
+    width: 150px
+    position: relative
+    left: 0
+    bottom: 0
+    right: 0
+    margin: auto
+    z-index: 9
+    
 /* Media screen */
         
 @media screen and (max-width: 1200px)
@@ -319,7 +332,7 @@ img
         margin-bottom: 10%
         
         
-@media screen and (max-width: 768px)    
+@media screen and (max-width: 768px) 
     #name
         font-size: 16px
         right: 30%
@@ -352,15 +365,30 @@ img
         
     .about-right
         margin-top: 1vh
-        font-size: 10px
+        font-size: 12px
         
     .about-left
         margin-top: 8vh
-        font-size: 10px
+        font-size: 12px
         
     .about-right h3,
     .about-left h3
         font-size: 16px
+        
+    /* Portfolio page */
+    
+    .text-center h2
+        font-size: 16px
+        
+    .text-center h3
+        font-size: 16px
+        
+    .portfolio
+        margin-top: 50px
+        
+    .image
+        height: 60px
+        width: 60px
 
 @media screen and (max-width: 576px)
     .overlay a
@@ -393,8 +421,14 @@ img
         margin-top: 0
         
     .image
-        height: 80px
-        width: 80px
+        height: 60px
+        width: 60px
+        
+    .text-center h2
+        font-size: 14px
+        
+    .text-center h3
+        font-size: 14px
         
             
     
