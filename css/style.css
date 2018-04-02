@@ -274,15 +274,13 @@ img {
 
 #img-a, #img-b, #img-c, #img-d, #img-e {
   background-position: center;
-  background-size: contain;
-  height: 200px;
-  width: 200px;
-  display: inline-block;
-  border: 2px solid #000;
-  border-radius: 5px; }
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%; }
 
 #img-a {
-  background-image: url(../img/img22.png); }
+  background-image: url(../img/img22.jpg); }
 
 #img-b {
   background-image: url(../img/img23.jpg); }
@@ -298,30 +296,46 @@ img {
 
 .layer {
   background-color: #000;
-  height: 198px;
-  width: 198px;
-  opacity: 0.98; }
+  height: 100%;
+  width: 100%;
+  opacity: 0.7; }
 
 .layer h4 {
-  background-color: #ff0000;
-  padding: 20px;
+  height: 90%;
+  width: 90%;
+  margin: 5%;
+  padding: 5%;
   color: #fff;
   position: absolute;
-  top: 60px;
-  left: 60px;
   border: 2px solid #0066ff;
-  border-radius: 5px 25px; }
+  font-family: 'Montserrat', sans-serif; }
 
 .container-image {
   display: inline-block;
-  position: relative; }
+  position: relative;
+  margin: 4px;
+  border: 2px solid #0066ff;
+  border-radius: 2%;
+  width: 300px;
+  height: 200px; }
+
+.layer:hover {
+  opacity: 0.9; }
+
+.layer h4:hover {
+  padding: 7%;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out; }
 
 /* Media screen */
 @media screen and (max-width: 1200px) {
   .name-border {
     right: 1.5%; }
   .port-work {
-    margin-bottom: 10%; } }
+    margin-bottom: 10%; }
+  .container-image {
+    width: 250px;
+    height: 167px; } }
 
 @media screen and (max-width: 768px) {
   #name {
@@ -359,9 +373,15 @@ img {
   .text-center h2 {
     font-size: 16px; }
   .text-center h3 {
-    font-size: 16px; }
+    font-size: 16px;
+    margin-bottom: 5vh; }
   .portfolio {
-    margin-top: 50px; } }
+    margin-top: 50px; }
+  .container-image {
+    width: 125px;
+    height: 70px; }
+  .layer h4 {
+    font-size: 12px; } }
 
 @media screen and (max-width: 576px) {
   .overlay a {
@@ -385,4 +405,7 @@ img {
   .text-center h2 {
     font-size: 14px; }
   .text-center h3 {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .container-image {
+    width: 100px;
+    height: 67px; } }
