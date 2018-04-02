@@ -298,9 +298,9 @@ img {
 
 .layer {
   background-color: #000;
-  height: 100%;
-  width: 100%;
-  opacity: 0.9; }
+  height: 198px;
+  width: 198px;
+  opacity: 0.98; }
 
 .layer h4 {
   background-color: #ff0000;
@@ -308,7 +308,9 @@ img {
   color: #fff;
   position: absolute;
   top: 60px;
-  left: 60px; }
+  left: 60px;
+  border: 2px solid #0066ff;
+  border-radius: 5px 25px; }
 
 .container-image {
   display: inline-block;
