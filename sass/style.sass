@@ -1,10 +1,10 @@
-/* @extend for .active classes */
+/* font-family: 'Alegreya SC', serif;
+   font-family: 'Montserrat', sans-serif;
+   font-family: 'Open Sans', sans-serif; */
 
-%active-menu
-    background-color: #000
-    height: 5px
-    margin: 6px
-    transition: 0.5s ease-in-out
+/* variables */
+
+$color: #818181
 
 /* Sendwich menu 3 bars */
 
@@ -16,30 +16,16 @@
     position: fixed
     width: 50px
     
-/* Sendwich menu */
+/* Sandwich menu */
 
 .menu1,
 .menu2,
 .menu3
-    background-color: #fff
-    height: 5px
+    border-top: 1px solid red
+    border-bottom: 1px solid red
+    height: 6px
     margin: 6px 
-    transition: 0.5s ease-in-out
-    width: 35px
-    
-/* Sendwich menu Jquery addClass */
-
-.active1
-    @extend %active-menu
-    width: 25px
-
-.active2
-    @extend %active-menu    
-    width: 15px
-
-.active3
-    @extend %active-menu
-    width: 30px
+    width: 40px
     
 /* Nav menu for active links Jquery */
 
@@ -73,7 +59,7 @@
 /* Fullscreen nav links */
 
 .overlay a
-    color: #818181
+    color: $color
     display: block
     font-size: 36px
     padding: 10px
@@ -104,14 +90,15 @@ body
 .body
     height: 100vh
     width: 100vw
-    position: fixed
+    position: absolute
     z-index: -3
+    overflow: hidden
    
 /* Landing page DIV with opacity overlay */
     
 .now
     background: #000
-    background-color: rgba(0,0,0,0.45)
+    background-color: rgba(0,0,0,0.7)
     border: 1px solid #000
     height: 98.5vh
     left: 50%
@@ -129,9 +116,65 @@ img
     max-width: 120%
     min-height: 100%
     overflow: hidden
-    position: fixed
+    position: absolute
     z-index: -2
+    
+/* My name */
 
+#name
+    color: #fff
+    font-family: 'Alegreya SC', serif;
+    position: absolute
+    top: 3%;
+    right: 50%  
+    
+.name   
+    font-family: 'Alegreya SC', serif;
+    position: absolute
+    top: 3%;
+    right: 10%
+    z-index: 99
+    
+.name h3
+    color: #fff
+    text-decoration: none
+    padding-top: 5px
+    
+.name a:hover
+    text-decoration: none
+    
+.name-border
+    width: 270px
+    height: 90px
+    position: absolute
+    right: 2.5%
+    top: 2%
+    
+.top-border
+    width: 25%
+    border-top: 1px solid red
+    
+.right-border
+    height: 25%
+    border-right: 1px solid red
+    position: absolute
+    right: 0
+    bottom: 0
+    
+.bottom-border
+    width: 25%
+    bottom: 0
+    right: 0
+    border-bottom: 1px solid red
+    position: absolute
+    
+.left-border
+    height: 25%
+    border-left: 1px solid red
+    position: absolute
+    left: 0
+    top: 0
+    
 /* Social buttons columns in overlay menu */
     
 .col-md-3
@@ -139,7 +182,7 @@ img
     font-weight: 800
     
 .col-md-3 a
-    color: #66b3ff
+    color: $color
     
 .col-md-3:first-child
     position: absolute
@@ -160,7 +203,6 @@ img
     left: 10%
     margin-top: 25%
     
-    
     h1
         font-family: 'Montserrat', sans-serif;
         font-size: 50px
@@ -176,21 +218,145 @@ img
 /* Landing page main text - animate */
 
 #main-animate
-    color: #66b3ff
+    color: $color
     font-size: 40px
+    
+/* Contact Page */
+
+.contact-top
+    text-align: center
+    top: 15vh
+    color: #fff
+
+.contact-left
+	height: 20vh
+	width: 50%
+	background-color: #ff0000
+	opacity: 0.5
+	position: relative
+	top: 20vh
+	z-index: 4
+	text-align: center
+
+.contact-right
+	height: 20vh
+	width: 50%
+	background-color: #0066ff
+	opacity: 0.5
+	position: relative
+	top: 20vh
+	z-index: 4
     
 /*  Contact page - footer - reserved rights */
 
 .rights
-    bottom: 5%
+    bottom: 2vh
     color: #fff
-    margin: 15px
+    margin: 5px
     right: 5%
     position: absolute
- 
-/* Fullscreen nav mobile */
+    text-align: center
+            
+/* About page */
 
-@media screen and (max-height: 770px)
+.about
+    margin-top: 15%
+
+.about-right
+    font-family: 'Alegreya SC', serif;
+    color: #fff
+    text-align: center
+    padding: 1px 5px
+    margin-top: 40vh
+    font-size: 18px
+    
+
+.about-left
+    font-family: 'Alegreya SC', serif;
+    color: #fff
+    text-align: center
+    font-size: 18px
+    
+.about-right h3,
+.about-left h3
+    font-family: 'Montserrat', sans-serif;
+    
+/* Portfolio page */
+    
+.text-center h2
+    color: #fff
+    font-family: 'Montserrat', sans-serif;
+    
+.text-center h3
+    color: #fff
+    font-family: 'Alegreya SC', serif;
+    margin-bottom: 15vh
+    
+.portfolio
+    margin-top: 100px
+    padding-bottom: 100px
+    height: 80%
+    width: 90%
+    
+%images
+    background-position: center
+    background-size: contain
+    height: 200px
+    width: 200px
+    display: inline-block
+    border: 2px solid #000
+    border-radius: 5px
+    
+#img-a
+    @extend %images
+    background-image: url(../img/img22.png)
+    
+#img-b
+    @extend %images
+    background-image: url(../img/img23.jpg)
+    
+#img-c
+    @extend %images
+    background-image: url(../img/img24.jpg)
+    
+#img-d
+    @extend %images
+    background-image: url(../img/img25.jpg)
+    
+#img-e
+    @extend %images
+    background-image: url(../img/img26.jpg)
+    
+.layer
+    background-color: #000
+    height: 100%
+    width: 100%
+    opacity: 0.7
+    
+/* Media screen */
+        
+@media screen and (max-width: 1200px)
+    .name-border
+        right: 1.5%
+        
+    .port-work
+        margin-bottom: 10%
+        
+        
+@media screen and (max-width: 768px) 
+    #name
+        font-size: 16px
+        right: 30%
+        
+    .name-border
+        height: 70px
+        top: 2.5%
+        right: 0
+        width: 165px
+        
+    .name h3
+        font-size: 16px
+        
     .overlay a
         font-size: 20px
     
@@ -198,10 +364,40 @@ img
         font-size: 40px
         top: 15px
         right: 35px
+        
+    .port-work
+        margin-bottom: 15%
+        
+    .contact-left
+        width: 100%
+        
+    .contact-right
+        width: 100%
+        
+    .about-right
+        margin-top: 1vh
+        font-size: 12px
+        
+    .about-left
+        margin-top: 8vh
+        font-size: 12px
+        
+    .about-right h3,
+    .about-left h3
+        font-size: 16px
+        
+    /* Portfolio page */
+    
+    .text-center h2
+        font-size: 16px
+        
+    .text-center h3
+        font-size: 16px
+        
+    .portfolio
+        margin-top: 50px
 
-/* Fullscreen nav mobile */
-
-@media screen and (max-height: 670px)
+@media screen and (max-width: 576px)
     .overlay a
         font-size: 16px
     
@@ -214,17 +410,28 @@ img
     margin: 15% 2% 2% 2%
     text-align: center
     
-/* Landing page text mobile */
-
-@media screen and (max-height: 670px)
     #main-text
         h1
-            font-size: 26px
-        p
-            font-size: 16px
-    
+            font-size: 24px
+            
+    #main-text
+        h3
+            font-size: 18px
+            
     #main-animate
-        font-size: 30px
+        font-size: 19px
+        
+    .port-work
+        margin-bottom: 1%
+        
+    .porto-text
+        margin-top: 0
+        
+    .text-center h2
+        font-size: 14px
+        
+    .text-center h3
+        font-size: 14px
             
             
             
