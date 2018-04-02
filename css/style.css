@@ -272,6 +272,10 @@ img {
   height: 80%;
   width: 90%; }
 
+.container-image {
+  display: inline-block;
+  position: relative; }
+
 #img-a, #img-b, #img-c, #img-d, #img-e {
   background-position: center;
   background-size: contain;
@@ -298,17 +302,21 @@ img {
 
 .layer {
   background-color: #000;
-  height: 100%;
-  width: 100%;
-  opacity: 0.9; }
+  height: 198px;
+  width: 196px;
+  opacity: 0.9;
+  position: absolute; }
 
 .layer h4 {
-  background-color: #ff0000;
-  padding: 20px;
   color: #fff;
-  position: absolute;
-  top: 60px;
-  left: 100px; }
+  background-color: #ff0000;
+  margin-top: 60px;
+  padding: 20px;
+  border: 2px solid #0066ff;
+  border-radius: 2% 25%; }
+
+.layer a {
+  text-decoration: none; }
 
 /* Media screen */
 @media screen and (max-width: 1200px) {
