@@ -144,6 +144,25 @@ $(document).ready(function () {
 
 /*  ----------------- */
 
+$(document).ready(function () {
+
+    $('.container-image-a').animate({
+        left: "0"
+    }, 3000);
+    $('.container-image-b').animate({
+        left: "0"
+    }, 2500);
+    $('.container-image-c').animate({
+        left: "0"
+    }, 2000);
+    $('.container-image-d').animate({
+        left: "0"
+    }, 1500);
+    $('.container-image-e').animate({
+        left: "0"
+    }, 1000);
+
+});
 
 
 

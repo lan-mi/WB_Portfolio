@@ -239,15 +239,15 @@ img {
   margin-top: 15%; }
 
 .about-right {
-  font-family: 'Alegreya SC', serif;
+  font-family: 'Varela Round', sans-serif;
   color: #fff;
   text-align: center;
-  padding: 1px 5px;
+  padding: 1px 10px;
   margin-top: 40vh;
   font-size: 18px; }
 
 .about-left {
-  font-family: 'Alegreya SC', serif;
+  font-family: 'Varela Round', sans-serif;
   color: #fff;
   text-align: center;
   font-size: 18px; }
@@ -298,7 +298,7 @@ img {
   background-color: #000;
   height: 100%;
   width: 100%;
-  opacity: 0.7; }
+  opacity: 0.9; }
 
 .layer h4 {
   height: 90%;
@@ -310,17 +310,22 @@ img {
   border: 2px solid #0066ff;
   font-family: 'Montserrat', sans-serif; }
 
-.container-image {
+.container-image-a,
+.container-image-b,
+.container-image-c,
+.container-image-d,
+.container-image-e {
   display: inline-block;
   position: relative;
   margin: 4px;
   border: 2px solid #0066ff;
   border-radius: 2%;
   width: 300px;
-  height: 200px; }
+  height: 200px;
+  left: -1500px; }
 
 .layer:hover {
-  opacity: 0.9; }
+  opacity: 0.7; }
 
 .layer h4:hover {
   padding: 7%;
@@ -333,7 +338,11 @@ img {
     right: 1.5%; }
   .port-work {
     margin-bottom: 10%; }
-  .container-image {
+  .container-image-a,
+  .container-image-b,
+  .container-image-c,
+  .container-image-d,
+  .container-image-e {
     width: 250px;
     height: 167px; } }
 
@@ -377,7 +386,11 @@ img {
     margin-bottom: 5vh; }
   .portfolio {
     margin-top: 50px; }
-  .container-image {
+  .container-image-a,
+  .container-image-b,
+  .container-image-c,
+  .container-image-d,
+  .container-image-e {
     width: 125px;
     height: 70px; }
   .layer h4 {
@@ -406,6 +419,10 @@ img {
     font-size: 14px; }
   .text-center h3 {
     font-size: 14px; }
-  .container-image {
+  .container-image-a,
+  .container-image-b,
+  .container-image-c,
+  .container-image-d,
+  .container-image-e {
     width: 100px;
     height: 67px; } }
