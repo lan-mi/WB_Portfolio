@@ -161,9 +161,6 @@ $(document).ready(function () {
     $('.container-image-e').animate({
         left: "0"
     }, 1000);
-    $('.name-a').animate({
-        opacity: "1"
-    }, 1000);
 
 });
 

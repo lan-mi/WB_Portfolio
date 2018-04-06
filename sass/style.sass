@@ -1,10 +1,11 @@
 /* font-family: 'Alegreya SC', serif;
    font-family: 'Montserrat', sans-serif;
-   font-family: 'Open Sans', sans-serif; */
+   font-family: 'Open Sans', sans-serif;
+   font-family: 'Varela Round', sans-serif;*/
 
 /* variables */
 
-$color: #818181
+$color: #0066ff
 
 /* Sendwich menu 3 bars */
 
@@ -111,7 +112,7 @@ body
     
 /* Landing page background image */
     
-img
+.cover-img
     background-size: cover
     max-width: 120%
     min-height: 100%
@@ -142,10 +143,6 @@ img
     color: #fff
     text-decoration: none
     padding-top: 5px
-    
-.name-a
-    opacity: 0
-    color: #ff0000
     
 .name a:hover
     text-decoration: none
@@ -211,29 +208,81 @@ img
 /* Contact Page */
 
 .contact-top
+    font-family: 'Montserrat', sans-serif;
     text-align: center
-    top: 15vh
+    top: 10vh
     color: #fff
 
 .contact-left
-	height: 20vh
 	width: 50%
-	background-color: #ff0000
-	opacity: 0.5
 	position: relative
-	top: 20vh
+	top: 25vh
 	z-index: 4
 	text-align: center
+	color: #fff
+	padding-bottom: 10px
+	padding-top: 25px
+	font-size: 20px
+
+.contact-left p
+    font-family: 'Varela Round', sans-serif;
 
 .contact-right
-	height: 20vh
 	width: 50%
-	background-color: #0066ff
-	opacity: 0.5
 	position: relative
-	top: 20vh
+	top: 25vh
 	z-index: 4
-    
+	padding: 20px
+	text-align: center
+
+#subject
+	height: 80px
+
+label
+	color: #fff
+	float: left
+
+#fname
+	background-color: #fff
+	border: hidden
+	border-radius: 5px
+	width: 100%
+	height: 40px
+	margin-bottom: 20px
+
+#email
+	background-color: #fff
+	border: hidden
+	border-radius: 5px
+	width: 100%
+	height: 40px
+	margin-bottom: 20px
+
+#subject
+	width: 100%
+	background-color: #fff
+	border: hidden
+	border-radius: 5px
+	margin-bottom: 30px
+
+input[type=submit]
+	background-color: #0066ff
+	border: hidden
+	border-radius: 5px
+	float: right
+	height: 40px
+	width: 100px
+
+input:focus
+    border: 1px solid #0066ff
+    outline: none !important
+    box-shadow: 0 0 10px #719ece
+
+textarea:focus
+    border: 1px solid #0066ff
+    outline: none !important
+    box-shadow: 0 0 10px #719ece
+
 /*  Contact page - footer - reserved rights */
 
 .rights
@@ -345,7 +394,7 @@ img
     opacity: 0.7
     
 .layer h4:hover
-    padding: 7%
+    padding: 25%
     transition-duration: 0.1s
     transition-timing-function: ease-in-out
    
@@ -365,6 +414,14 @@ img
     .container-image-e
         width: 250px
         height: 167px
+        
+@media screen and (max-width: 992px)
+	.contact-left
+		width: 100%
+	
+	.contact-right
+		width: 100%     
+
         
         
 @media screen and (max-width: 768px) 
@@ -391,12 +448,6 @@ img
         
     .port-work
         margin-bottom: 15%
-        
-    .contact-left
-        width: 100%
-        
-    .contact-right
-        width: 100%
         
     .about-right
         margin-top: 1vh
@@ -427,8 +478,8 @@ img
     .container-image-c,
     .container-image-d,
     .container-image-e
-        width: 125px
         height: 70px
+        width: 125px
     
     .layer h4
         font-size: 12px
@@ -439,8 +490,9 @@ img
     
     .overlay .closebtn
         font-size: 35px
-        top: 12px
         right: 25px
+        top: 12px
+
     
     #main-text
         h1
@@ -470,8 +522,8 @@ img
     .container-image-c,
     .container-image-d,
     .container-image-e
-        width: 100px
         height: 67px
+        width: 100px
             
             
             
