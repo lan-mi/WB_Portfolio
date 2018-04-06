@@ -18,9 +18,6 @@ $(document).ready(function () {
     }, 1000).animate({
         width: "40px"
     });
-});
-
-$(document).ready(function () {
     $('#menu2').stop(true, true).delay(2000).animate({
         width: "50px"
     }, 1000).animate({
@@ -28,9 +25,6 @@ $(document).ready(function () {
     }, 1000).animate({
         width: "40px"
     });
-});
-
-$(document).ready(function () {
     $('#menu3').stop(true, true).delay(3000).animate({
         width: "50px"
     }, 1000).animate({
@@ -55,7 +49,6 @@ $(document).ready(function () {
 var someajaxtext = 'Milan Marijanovic';
 
 $(document).ready(function () {
-
     var dv = $('#name');
     dv.text("");
     $({
@@ -68,15 +61,9 @@ $(document).ready(function () {
             dv.text(someajaxtext.substring(0, Math.round(this.count)));
         }
     });
-
-});
-
-$(document).ready(function () {
-
     $('#name').delay(3000).animate({
         right: '4%'
     });
-
 });
 
 /* Main menu text animation */
@@ -105,9 +92,6 @@ $(document).ready(function () {
             width: "80%"
         }, 500);
     }, 1500);
-});
-
-$(document).ready(function () {
     setTimeout(function () {
         $('.bottom-border').animate({
             width: "70%"
@@ -142,7 +126,7 @@ $(document).ready(function () {
     });
 });
 
-/*  ----------------- */
+/* Animate portfolio page - images/links websites */
 
 $(document).ready(function () {
 
@@ -165,15 +149,22 @@ $(document).ready(function () {
 });
 
 
-/* ------------------ */
+/* Name hover by letter */
 
-$cont = $('.name h3');
-parts = $.map($cont.text().split(''), function (v) {
-    return $('<span />', {
-        text: v
+$(document).ready(function () {
+
+    $cont = $('.name h3');
+    parts = $.map($cont.text().split(''), function (v) {
+        return $('<span />', {
+            text: v
+        });
     });
+    $cont.empty().append(parts);
+
 });
-$cont.empty().append(parts);
+/*  ------------------  */
+
+
 
 
 
