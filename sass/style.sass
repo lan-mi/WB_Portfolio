@@ -7,7 +7,10 @@
 
 /* variables */
 
-$color: #0066ff
+$prim: #f00
+$sec: #0066ff
+$ter: #fff
+
 
 /* Sendwich menu 3 bars */
 
@@ -24,8 +27,8 @@ $color: #0066ff
 .menu1,
 .menu2,
 .menu3
-    border-top: 1px solid red
-    border-bottom: 1px solid red
+    border-top: 1px solid $prim
+    border-bottom: 1px solid $prim
     height: 6px
     margin: 6px 
     width: 40px
@@ -69,7 +72,8 @@ $color: #0066ff
 /* Fullscreen nav links */
 
 .overlay a
-    color: $color
+    font-family: 'Montserrat', sans-serif;
+    color: $sec
     display: block
     font-size: 36px
     padding: 10px
@@ -80,7 +84,7 @@ $color: #0066ff
 
 .overlay a:hover,
 .overlay a:focus
-    color: #f1f1f1
+    color: $ter
     
 /* Fullscreeen nav close button */
 
@@ -133,20 +137,17 @@ body
 /* My name */
 
 #name
-    color: #fff
+    color: $ter
     font-family: 'Alegreya SC', serif;
     position: absolute
-    top: 3%;
+    top: 20px
     right: 50%  
-    
-#name:first-child
-    color: #ff0000
     
 .name   
     font-family: 'Alegreya SC', serif;
     position: absolute
     top: 3%;
-    right: 10%
+    right: 25px
     z-index: 99
     
 .name h3
@@ -155,47 +156,33 @@ body
     padding-top: 5px
     
 .name h3 span:hover
-    color: #ff0000
+    color: $prim
     
 .name a:hover
     text-decoration: none
     
 .name-border
-    width: 270px
     height: 90px
     position: absolute
-    right: 2.5%
-    top: 2%
+    right: 14px
+    top: 20px
+    width: 270px
     
 .top-border
     width: 25%
-    border-top: 1px solid red
-    
-.right-border
-    height: 25%
-    border-right: 1px solid red
-    position: absolute
-    right: 0
-    bottom: 0
+    border-top: 1px solid $prim
     
 .bottom-border
     width: 25%
     bottom: 0
     right: 0
-    border-bottom: 1px solid red
+    border-bottom: 1px solid $prim
     position: absolute
-    
-.left-border
-    height: 25%
-    border-left: 1px solid red
-    position: absolute
-    left: 0
-    top: 0
     
 /* Landing page text container */
 
 #main-text
-    color: #fff
+    color: $ter
     float: left
     left: 10%
     margin-top: 35vh
@@ -215,7 +202,7 @@ body
 /* Landing page main text - animate */
 
 #main-animate
-    color: $color
+    color: $sec
     font-size: 40px
     
 /* Contact Page */
@@ -226,40 +213,44 @@ body
     top: 10vh
     color: #fff
 
+/* Left column */
+    
 .contact-left
 	width: 50%
 	position: relative
 	top: 25vh
 	z-index: 4
 	text-align: center
-	color: #fff
+	color: $ter
 	padding-bottom: 10px
 	padding-top: 25px
 	font-size: 20px
 
 .contact-left p
-    color: #0066ff
+    color: $sec
     font-family: 'Open Sans', sans-serif;
     font-size: 22px
     font-weight: 400
     
 .contact-left a
-    color: #0066ff
+    color: $sec
     text-decoration: none
     
 .contact-left a:hover
-    color: #fff
+    color: $ter
+    
+/* Right column - contact form */
 
 .contact-right
-	width: 40%
-	position: relative
-	top: 25vh
-	z-index: 4
 	padding: 20px
+	position: relative
 	text-align: center
+	top: 25vh
+	width: 40%
+	z-index: 4
 
 label
-	color: #0066ff
+	color: $sec
 	float: left
 
 #fname
@@ -283,7 +274,7 @@ label
     width: 100%
 
 input[type=submit]
-	background-color: #0066ff
+	background-color: $sec
 	border: hidden
 	border-radius: 5px
 	float: right
@@ -291,14 +282,14 @@ input[type=submit]
 	width: 100px
 
 input:focus
-    border: 1px solid #0066ff
+    border: 1px solid $sec
     outline: none !important
-    box-shadow: 0 0 10px #719ece
+    box-shadow: 0 0 10px $sec
 
 textarea:focus
-    border: 1px solid #0066ff
+    border: 1px solid $sec
+    box-shadow: 0 0 10px $sec
     outline: none !important
-    box-shadow: 0 0 10px #719ece
 
 /*  Contact page - footer - reserved rights */
 
@@ -347,9 +338,9 @@ textarea:focus
     margin-bottom: 15vh
     
 .portfolio
+    height: 80%
     margin-top: 100px
     padding-bottom: 100px
-    height: 80%
     width: 90%
     
 %images
@@ -378,6 +369,8 @@ textarea:focus
 #img-e
     @extend %images
     background-image: url(../img/img26.jpg)
+    
+/* Layer over images */
     
 .layer
     background-color: #000
@@ -413,16 +406,13 @@ textarea:focus
     opacity: 0.7
     
 .layer h4:hover
-    padding: 25%
+    padding: 10%
     transition-duration: 0.1s
     transition-timing-function: ease-in-out
    
-/* Media screen */
+/* MEDIA SCREENS */
         
-@media screen and (max-width: 1200px) and (max-height: 1386px)
-    .name-border
-        right: 1.5%
-        
+@media screen and (max-width: 1200px)
     .port-work
         margin-bottom: 10%
         
@@ -448,27 +438,29 @@ textarea:focus
     .contact-right
         top: 10vh
         
-@media screen and (max-width: 992px) and (max-height: 1200px)
+    .text-center h3
+        margin-bottom: 15px
+        
+@media screen and (max-width: 992px)
         
 	.contact-left
 		width: 100%
-        top: 10vh
+        top: 15vh
 	
 	.contact-right
-		width: 100%
-        top: 10vh
-        
-@media screen and (max-width: 768px) and (max-height: 1200px)
+		display: none
+
+@media screen and (max-width: 768px)
     
     #name
         font-size: 16px
         right: 30%
+        top: 20px
         
     .name-border
         height: 70px
-        right: 0
-        top: 2.5%
         width: 165px
+        right: 0
         
     .name h3
         font-size: 16px
@@ -547,7 +539,7 @@ textarea:focus
     .contact-right p
         font-size: 14px
 
-@media screen and (max-width: 576px) and (max-height: 768px)
+@media screen and (max-width: 576px)
     .overlay a
         font-size: 16px
     
@@ -596,7 +588,109 @@ textarea:focus
         height: 67px
         width: 100px
         
-@media (min-height: 576px) and (max-height: 768px)
+    .contact-right
+        display: none
+        
+@media (max-height: 768px)
+    #main-text h1
+        font-size: 20px
+        
+    #main-text h3
+        font-size: 16px
+        
+    #main-text
+        margin-top: 20vh
+        
+    #main-animate
+        font-size: 18px
+        
+    .contact-left
+        top: 15vh
+        
+    .contact-left p
+        font-size: 12px
+        
+    .name
+        right: 15px
+        
+    .portfolio
+        margin-top: 75px
+        
+@media (max-height: 576px)
+    .portfolio
+        margin-top: 75px
+        
+    .about
+        margin-top: 15vh
+        
+    .about-right p,
+    .about-left p
+        font-size: 10px
+        
+    .contact-left
+        top: 45px
+        
+    .contact-left img
+        height: 15px
+        width: 15px
+        
+    .contact-top
+        top: 70px
+        
+@media (min-height: 900px) and (max-height: 1024px)
+    .container-image-a,
+    .container-image-b,
+    .container-image-c,
+    .container-image-d,
+    .container-image-e
+        height: 113px
+        width: 200px
+        
+    .contact-right
+        display: inline
+        
+    .about-right
+        padding: 80px
+        
+    .about-left
+        padding: 80px
+        
+    #name
+        top: 25px
+        
+@media (min-height: 450px) and (max-height: 485px)
+    .contact-left
+        top: 70px
+        
+    .contact-top h2
+        margin-top: 40px
+        
+@media (min-height: 300px) and (max-height: 350px)
+    .container-image-a,
+    .container-image-b,
+    .container-image-c,
+    .container-image-d,
+    .container-image-e
+        height: 50px
+        width: 90px
+        
+
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 
         
         

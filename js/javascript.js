@@ -104,7 +104,7 @@ $(document).ready(function () {
         $('.top-border').animate({
             width: "80%"
         }, 500);
-    }, 3500);
+    }, 1500);
 });
 
 $(document).ready(function () {
@@ -112,7 +112,7 @@ $(document).ready(function () {
         $('.bottom-border').animate({
             width: "70%"
         }, 500);
-    }, 3500);
+    }, 1500);
 });
 
 /* Animating sandwich menu on hover */
