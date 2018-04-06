@@ -165,6 +165,17 @@ $(document).ready(function () {
 });
 
 
+/* ------------------ */
+
+$cont = $('.name h3');
+parts = $.map($cont.text().split(''), function (v) {
+    return $('<span />', {
+        text: v
+    });
+});
+$cont.empty().append(parts);
+
+
 
 
 
