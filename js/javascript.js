@@ -148,6 +148,16 @@ $(document).ready(function () {
 
 });
 
+/* Animate About page - text-container */
+
+$(document).ready(function () {
+    $('.about-left').delay(800).animate({
+        left: "0"
+    }, 2000, "easeOutBack");
+    $('.about-right').delay(800).animate({
+        right: "0"
+    }, 2000, "easeOutBack");
+});
 
 /* Name hover by letter */
 
@@ -162,14 +172,93 @@ $(document).ready(function () {
     $cont.empty().append(parts);
 
 });
-/*  ------------------  */
 
+/* Icons fadeIn nad fadeOut Landing page */
 
+var longIntervalTime = 4000;
 
+function cycle(id) {
+    var nextId = (id == "icon-1") ? "icon-2" : "icon-1";
+    $("#" + id)
+        .fadeIn(400)
+        .delay(longIntervalTime)
+        .fadeOut(400, function () {
+            cycle(nextId);
+        });
+}
+cycle("icon-1", 0);
 
+/* ---------------   */
 
+var longTime = 5200;
 
+function cycle1(id) {
+    var nextId1 = (id == "icon-11") ? "icon-12" : "icon-11";
+    $("#" + id)
+        .fadeIn(400)
+        .delay(longTime)
+        .fadeOut(400, function () {
+            cycle1(nextId1);
+        });
+}
+cycle1("icon-11", 0);
 
+/* -------------------   */
 
+var longTime1 = 4700;
 
-/*  ---------------   */
+function cycle2(id) {
+    var nextId2 = (id == "icon-21") ? "icon-22" : "icon-21";
+    $("#" + id)
+        .fadeIn(400)
+        .delay(longTime1)
+        .fadeOut(400, function () {
+            cycle2(nextId2);
+        });
+}
+cycle2("icon-21", 0);
+
+/* ----------------- */
+
+var longTime2 = 2000;
+
+function cycle3(id) {
+    var nextId2 = (id == "icon-31") ? "icon-32" : "icon-31";
+    $("#" + id)
+        .fadeIn(400)
+        .delay(longTime2)
+        .fadeOut(400, function () {
+            cycle3(nextId2);
+        });
+}
+cycle3("icon-31", 0);
+
+/* ----------------- */
+
+var longTime3 = 5500;
+
+function cycle4(id) {
+    var nextId3 = (id == "icon-41") ? "icon-42" : "icon-41";
+    $("#" + id)
+        .fadeIn(400)
+        .delay(longTime3)
+        .fadeOut(400, function () {
+            cycle4(nextId3);
+        });
+}
+cycle4("icon-41", 0);
+
+/* ------------------- */
+
+var longTime4 = 3500;
+
+function cycle5(id) {
+    var nextId4 = (id == "icon-51") ? "icon-52" : "icon-51";
+    $("#" + id)
+        .fadeIn(400)
+        .delay(longTime4)
+        .fadeOut(400, function () {
+            cycle5(nextId4);
+        });
+}
+cycle5("icon-51", 0);

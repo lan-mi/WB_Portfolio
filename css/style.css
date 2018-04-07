@@ -1,11 +1,16 @@
 /* font-family: 'Alegreya SC', serif;
    font-family: 'Montserrat', sans-serif;
    font-family: 'Open Sans', sans-serif;
-   font-family: 'Varela Round', sans-serif;
-   font-family: 'Roboto', sans-serif;
-   font-family: 'Cormorant Garamond', serif; */
+   font-family: 'Varela Round', sans-serif; */
 /* variables */
-/* === ALL PAGES =========================== */
+#img-a, #img-b, #img-c, #img-d, #img-e {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%; }
+
+/* === GENERAL =========================== */
 /* Sendwich menu 3 bars */
 #menu-toggle {
   cursor: pointer;
@@ -110,15 +115,15 @@ body {
   width: 270px; }
 
 .top-border {
-  width: 25%;
-  border-top: 1px solid #f00; }
+  border-top: 1px solid #f00;
+  width: 25%; }
 
 .bottom-border {
-  width: 25%;
   bottom: 0;
-  right: 0;
   border-bottom: 1px solid #f00;
-  position: absolute; }
+  right: 0;
+  position: absolute;
+  width: 25%; }
 
 /* === HOME PAGE ===============================*/
 /* Landing page DIV class body */
@@ -131,16 +136,16 @@ body {
 
 /* Landing page DIV with opacity overlay */
 .now {
-  background: #000;
+  background: #fff;
   background-color: rgba(0, 0, 0, 0.7);
   border: 1px solid #000;
   height: 98.5vh;
   left: 50%;
-  position: relative;
+  position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 99vw;
   -webkit-transform: translate(-50%, -50%);
+  width: 99vw;
   z-index: -1; }
 
 /* Landing page background image */
@@ -150,6 +155,55 @@ body {
   min-height: 100%;
   overflow: hidden;
   position: absolute;
+  z-index: -3; }
+
+/* Landing page icons animate */
+#icon-1,
+#icon-2 {
+  bottom: 50px;
+  display: none;
+  position: absolute;
+  right: 150px;
+  z-index: -2; }
+
+#icon-11,
+#icon-12 {
+  bottom: 100px;
+  display: none;
+  position: absolute;
+  right: 50px;
+  z-index: -2; }
+
+#icon-21,
+#icon-22 {
+  bottom: 150px;
+  display: none;
+  position: absolute;
+  right: 270px;
+  z-index: -2; }
+
+#icon-31,
+#icon-32 {
+  bottom: 120px;
+  display: none;
+  position: absolute;
+  right: 400px;
+  z-index: -2; }
+
+#icon-41,
+#icon-42 {
+  bottom: 180px;
+  display: none;
+  position: absolute;
+  right: 150px;
+  z-index: -2; }
+
+#icon-51,
+#icon-52 {
+  bottom: 50px;
+  display: none;
+  position: absolute;
+  right: 300px;
   z-index: -2; }
 
 /* My name */
@@ -157,8 +211,8 @@ body {
   color: #fff;
   font-family: 'Alegreya SC', serif;
   position: absolute;
-  top: 20px;
-  right: 50%; }
+  right: 50%;
+  top: 20px; }
 
 /* Landing page text container */
 #main-text {
@@ -184,26 +238,33 @@ body {
   font-size: 40px; }
 
 /* === ABOUT PAGE ================================= */
-.about {
-  margin-top: 15vh; }
-
-.about-right {
-  font-family: 'Varela Round', sans-serif;
-  color: #fff;
-  text-align: center;
-  padding: 1px 100px;
-  margin-top: 40vh;
-  font-size: 18px; }
-
 .about-left {
   color: #fff;
   font-family: 'Varela Round', sans-serif;
   font-size: 18px;
-  padding: 1px 100px;
-  text-align: center; }
+  height: 250px;
+  left: -1500px;
+  padding: 50px;
+  position: absolute;
+  text-align: center;
+  top: 150px;
+  width: 800px; }
+
+.about-right {
+  bottom: 150px;
+  color: #fff;
+  font-family: 'Varela Round', sans-serif;
+  height: 250px;
+  text-align: center;
+  font-size: 18px;
+  padding: 50px;
+  position: absolute;
+  right: -1500px;
+  width: 800px; }
 
 .about-right h3,
 .about-left h3 {
+  color: #0066ff;
   font-family: 'Montserrat', sans-serif; }
 
 /* === PORTFOLIO PAGE ================================ */
@@ -221,13 +282,6 @@ body {
   margin-top: 100px;
   padding-bottom: 100px;
   width: 90%; }
-
-#img-a, #img-b, #img-c, #img-d, #img-e {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%; }
 
 #img-a {
   background-image: url(../img/img22.jpg); }
@@ -248,32 +302,32 @@ body {
 .layer {
   background-color: #000;
   height: 100%;
-  width: 100%;
-  opacity: 0.9; }
+  opacity: 0.9;
+  width: 100%; }
 
 .layer h4 {
+  color: #fff;
+  border: 2px solid #0066ff;
+  font-family: 'Montserrat', sans-serif;
   height: 90%;
-  width: 90%;
   margin: 5%;
   padding: 5%;
-  color: #fff;
   position: absolute;
-  border: 2px solid #0066ff;
-  font-family: 'Montserrat', sans-serif; }
+  width: 90%; }
 
 .container-image-a,
 .container-image-b,
 .container-image-c,
 .container-image-d,
 .container-image-e {
-  display: inline-block;
-  position: relative;
-  margin: 4px;
   border: 2px solid #0066ff;
   border-radius: 2%;
-  width: 300px;
+  display: inline-block;
   height: 200px;
-  left: -1500px; }
+  left: -1500px;
+  margin: 4px;
+  position: relative;
+  width: 300px; }
 
 .layer:hover {
   opacity: 0.7; }
@@ -377,7 +431,7 @@ textarea:focus {
 
 /* === MEDIA SCREENS ==================================*/
 /* Max-width 1200px */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   .port-work {
     margin-bottom: 10%; }
   .container-image-a,
@@ -387,24 +441,84 @@ textarea:focus {
   .container-image-e {
     width: 250px;
     height: 167px; }
-  .about-left {
-    padding-left: 10px;
-    padding-right: 10px; }
-  .about-right {
-    padding-left: 10px;
-    padding-right: 10px; }
   .contact-left {
     top: 10vh; }
   .contact-right {
     top: 10vh; }
   .text-center h3 {
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+  #main-text h1 {
+    font-size: 20px; }
+  #main-text h3 {
+    font-size: 16px; }
+  #main-text {
+    margin-top: 20vh; }
+  #main-animate {
+    font-size: 18px; }
+  .contact-left {
+    top: 15vh; }
+  .contact-left p {
+    font-size: 12px; }
+  .name {
+    right: 15px; }
+  .portfolio {
+    margin-top: 75px; }
+  #icon-1 img,
+  #icon-2 img,
+  #icon-11 img,
+  #icon-12 img {
+    height: 25px;
+    width: 25px; }
+  #icon-21 img,
+  #icon-22 img {
+    height: 25px;
+    width: 25px; }
+  #icon-31 img,
+  #icon-32 img {
+    height: 25px;
+    width: 25px; }
+  #icon-41 img,
+  #icon-42 img {
+    height: 25px;
+    width: 25px; }
+  #icon-51 img,
+  #icon-52 img {
+    height: 25px;
+    width: 25px; }
+  #icon-1,
+  #icon-2 {
+    bottom: 15px; }
+  #icon-11,
+  #icon-12 {
+    bottom: 20px; }
+  #icon-21,
+  #icon-22 {
+    bottom: 70px;
+    right: 70px; }
+  #icon-31,
+  #icon-32 {
+    bottom: 80px;
+    right: 120px; }
+  #icon-41,
+  #icon-42 {
+    right: 15px;
+    bottom: 90px; }
+  #icon-51,
+  #icon-52 {
+    bottom: 30px;
+    right: 105px; } }
 
 /* Max-width 992px */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 960px) {
+  .about-left {
+    top: 100px;
+    width: 500px; }
+  .about-right {
+    bottom: 100px;
+    width: 500px; }
   .contact-left {
     width: 100%;
-      width-top: 15vh; }
+    top: 15vh; }
   .contact-right {
     display: none; } }
 
@@ -429,23 +543,26 @@ textarea:focus {
   .github img {
     height: 30px;
     width: 30px; }
+  .about-left {
+    height: 40vh;
+    padding: 8px;
+    top: 70px;
+    width: 100vw; }
+    .about-left h3 {
+      font-size: 16px; }
+    .about-left p {
+      font-size: 14px; }
+  .about-right {
+    bottom: 0;
+    height: 40vh;
+    padding: 8px;
+    width: 100vw; }
+    .about-right h3 {
+      font-size: 16px; }
+    .about-right p {
+      font-size: 14px; }
   .port-work {
     margin-bottom: 15%; }
-  .about-right {
-    font-size: 11px;
-    margin-top: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 0; }
-  .about-left {
-    margin-top: 8vh;
-    font-size: 11px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 0; }
-  .about-right h3,
-  .about-left h3 {
-    font-size: 16px; }
   .text-center h2 {
     font-size: 16px; }
   .text-center h3 {
@@ -463,17 +580,20 @@ textarea:focus {
   .layer h4 {
     font-size: 12px; }
   .contact-top {
-    top: 13vh; }
+    top: 10vh; }
   .contact-top h2 {
     font-size: 16px; }
   .contact-left {
-    top: 15vh; }
+    top: 8vh; }
   .contact-right {
     display: none; }
   .contact-left p {
     font-size: 14px; }
   .contact-right p {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .contact-left img {
+    height: 20px;
+    width: 20px; } }
 
 /* Max-width 576px */
 @media screen and (max-width: 576px) {
@@ -491,10 +611,8 @@ textarea:focus {
     font-size: 18px; }
   #main-animate {
     font-size: 19px; }
-  .about {
-    margin-top: 10vh; }
   .portfolio {
-    margin-top: 50px; }
+    margin-top: 80px; }
   .port-work {
     margin-bottom: 1%; }
   .porto-text {
@@ -508,78 +626,28 @@ textarea:focus {
   .container-image-c,
   .container-image-d,
   .container-image-e {
-    height: 67px;
-    width: 100px; }
+    height: 80px;
+    width: 110px; }
   .contact-right {
-    display: none; } }
+    display: none; }
+  .contact-top {
+    top: 13vh; } }
 
-/* Max-height 768px */
-@media (max-height: 768px) {
-  #main-text h1 {
-    font-size: 20px; }
-  #main-text h3 {
-    font-size: 16px; }
-  #main-text {
-    margin-top: 20vh; }
-  #main-animate {
-    font-size: 18px; }
-  .contact-left {
-    top: 15vh; }
-  .contact-left p {
+@media screen and (max-height: 480px) {
+  .about-left h3 {
     font-size: 12px; }
-  .name {
-    right: 15px; }
-  .portfolio {
-    margin-top: 75px; } }
-
-/* Max-height 576px */
-@media (max-height: 576px) {
-  .portfolio {
-    margin-top: 75px; }
-  .about {
-    margin-top: 15vh; }
-  .about-right p,
   .about-left p {
     font-size: 10px; }
-  .contact-left {
-    top: 45px; }
-  .contact-left img {
-    height: 15px;
-    width: 15px; }
-  .contact-top {
-    top: 70px; } }
-
-/* Min-height 900px and max-height 1024px */
-@media (min-height: 900px) and (max-height: 1024px) {
+  .about-right h3 {
+    font-size: 12px; }
+  .about-right p {
+    font-size: 10px; }
   .container-image-a,
   .container-image-b,
   .container-image-c,
   .container-image-d,
   .container-image-e {
-    height: 113px;
-    width: 200px; }
-  .contact-right {
-    display: inline; }
-  .about-right {
-    padding: 80px; }
-  .about-left {
-    padding: 80px; }
-  #name {
-    top: 25px; } }
-
-/* Min-height 450px and max-height 485px */
-@media (min-height: 450px) and (max-height: 485px) {
-  .contact-left {
-    top: 70px; }
-  .contact-top h2 {
-    margin-top: 40px; } }
-
-/* Min-height 300px and max-height 350px */
-@media (min-height: 300px) and (max-height: 350px) {
-  .container-image-a,
-  .container-image-b,
-  .container-image-c,
-  .container-image-d,
-  .container-image-e {
-    height: 50px;
-    width: 90px; } }
+    height: 60px;
+    width: 100px; }
+  .contact-left p {
+    font-size: 12px; } }
