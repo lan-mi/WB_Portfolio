@@ -91,12 +91,12 @@ $(document).ready(function () {
         $('.top-border').animate({
             width: "80%"
         }, 500);
-    }, 1500);
+    }, 3500);
     setTimeout(function () {
         $('.bottom-border').animate({
             width: "70%"
         }, 500);
-    }, 1500);
+    }, 3500);
 });
 
 /* Animating sandwich menu on hover */

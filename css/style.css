@@ -24,8 +24,8 @@
 .menu1,
 .menu2,
 .menu3 {
-  border-top: 1px solid #f00;
-  border-bottom: 1px solid #f00;
+  border-top: 1px solid #ff3300;
+  border-bottom: 1px solid #ff3300;
   height: 6px;
   margin: 6px;
   width: 40px; }
@@ -65,7 +65,7 @@
 /* Fullscreen nav links */
 .overlay a {
   font-family: 'Montserrat', sans-serif;
-  color: #0066ff;
+  color: #ff3300;
   display: block;
   font-size: 36px;
   padding: 10px;
@@ -102,7 +102,7 @@ body {
   padding-top: 5px; }
 
 .name h3 span:hover {
-  color: #f00; }
+  color: #ff3300; }
 
 .name a:hover {
   text-decoration: none; }
@@ -115,12 +115,12 @@ body {
   width: 270px; }
 
 .top-border {
-  border-top: 1px solid #f00;
+  border-top: 1px solid #ff3300;
   width: 25%; }
 
 .bottom-border {
   bottom: 0;
-  border-bottom: 1px solid #f00;
+  border-bottom: 1px solid #ff3300;
   right: 0;
   position: absolute;
   width: 25%; }
@@ -160,50 +160,50 @@ body {
 /* Landing page icons animate */
 #icon-1,
 #icon-2 {
-  bottom: 50px;
+  bottom: 1vh;
   display: none;
   position: absolute;
-  right: 150px;
+  right: 5px;
   z-index: -2; }
 
 #icon-11,
 #icon-12 {
-  bottom: 100px;
+  bottom: 1vh;
   display: none;
   position: absolute;
-  right: 50px;
+  right: 205px;
   z-index: -2; }
 
 #icon-21,
 #icon-22 {
-  bottom: 150px;
+  bottom: 1vh;
   display: none;
   position: absolute;
-  right: 270px;
+  right: 505px;
   z-index: -2; }
 
 #icon-31,
 #icon-32 {
-  bottom: 120px;
+  bottom: 1vh;
   display: none;
   position: absolute;
-  right: 400px;
+  right: 405px;
   z-index: -2; }
 
 #icon-41,
 #icon-42 {
-  bottom: 180px;
+  bottom: 1vh;
   display: none;
   position: absolute;
-  right: 150px;
+  right: 100px;
   z-index: -2; }
 
 #icon-51,
 #icon-52 {
-  bottom: 50px;
+  bottom: 1vh;
   display: none;
   position: absolute;
-  right: 300px;
+  right: 305px;
   z-index: -2; }
 
 /* My name */
@@ -212,7 +212,7 @@ body {
   font-family: 'Alegreya SC', serif;
   position: absolute;
   right: 50%;
-  top: 20px; }
+  top: 27px; }
 
 /* Landing page text container */
 #main-text {
@@ -234,7 +234,7 @@ body {
 
 /* Landing page main text - animate */
 #main-animate {
-  color: #0066ff;
+  color: #ff3300;
   font-size: 40px; }
 
 /* === ABOUT PAGE ================================= */
@@ -264,7 +264,7 @@ body {
 
 .about-right h3,
 .about-left h3 {
-  color: #0066ff;
+  color: #ff3300;
   font-family: 'Montserrat', sans-serif; }
 
 /* === PORTFOLIO PAGE ================================ */
@@ -357,13 +357,13 @@ body {
   font-size: 20px; }
 
 .contact-left p {
-  color: #0066ff;
+  color: #ff3300;
   font-family: 'Open Sans', sans-serif;
   font-size: 22px;
   font-weight: 400; }
 
 .contact-left a {
-  color: #0066ff;
+  color: #ff3300;
   text-decoration: none; }
 
 .contact-left a:hover {
@@ -379,7 +379,7 @@ body {
   z-index: 4; }
 
 label {
-  color: #0066ff;
+  color: #ff3300;
   float: left; }
 
 #fname {
@@ -403,7 +403,7 @@ label {
   width: 100%; }
 
 input[type=submit] {
-  background-color: #0066ff;
+  background-color: #ff3300;
   border: hidden;
   border-radius: 5px;
   float: right;
@@ -411,13 +411,13 @@ input[type=submit] {
   width: 100px; }
 
 input:focus {
-  border: 1px solid #0066ff;
+  border: 1px solid #ff3300;
   outline: none !important;
-  box-shadow: 0 0 10px #0066ff; }
+  box-shadow: 0 0 10px #ff3300; }
 
 textarea:focus {
-  border: 1px solid #0066ff;
-  box-shadow: 0 0 10px #0066ff;
+  border: 1px solid #ff3300;
+  box-shadow: 0 0 10px #ff3300;
   outline: none !important; }
 
 /*  Contact page - footer - reserved rights */
