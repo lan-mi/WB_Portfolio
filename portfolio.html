@@ -33,7 +33,12 @@
         </div>
     </div>
     <div class="body">
-        <img src="img/114.jpg" class="cover-img">
+        <picture>
+            <source media="(max-width: 1024px)" srcset="img/114-a.jpg">
+            <source media="(max-width: 768px)" srcset="img/114-b.jpg">
+            <source media="(max-width: 576px)" srcset="img/114-c.jpg">
+            <img src="img/114.jpg" class="cover-img">
+        </picture>
         <div class="now">
             <div id="menu-toggle" class="menu-toggle" onclick="openNav()">
                 <div class="menu1"></div>
@@ -61,48 +66,38 @@
                     </div>
                     <div class="col-sm-12 text-center">
                         <div class="container-image-a">
-                            <div id="img-a">
-                                <div class="layer">
-                                    <a href="http://www.digital-zeppelin.com" target="_blank">
-                                        <h4>View</h4>
-                                    </a>
-                                </div>
+                            <div class="layer-a">
+                                <a href="http://www.digital-zeppelin.com" target="_blank">
+                                    <h4>View</h4>
+                                </a>
                             </div>
                         </div>
                         <div class="container-image-b">
-                            <div id="img-b">
-                                <div class="layer">
-                                    <a href="http://www.nemovisuals.com" target="_blank">
-                                        <h4>View</h4>
-                                    </a>
-                                </div>
+                            <div class="layer-b">
+                                <a href="http://www.nemovisuals.com" target="_blank">
+                                    <h4>View</h4>
+                                </a>
                             </div>
                         </div>
                         <div class="container-image-c">
-                            <div id="img-c">
-                                <div class="layer">
-                                    <a href="http://deljanemanja.com/" target="_blank">
-                                        <h4>View</h4>
-                                    </a>
-                                </div>
+                            <div class="layer-c">
+                                <a href="http://deljanemanja.com/" target="_blank">
+                                    <h4>View</h4>
+                                </a>
                             </div>
                         </div>
                         <div class="container-image-d">
-                            <div id="img-d">
-                                <div class="layer">
-                                    <a href="http://www.archiveofphotography.com/" target="_blank">
-                                        <h4>View</h4>
-                                    </a>
-                                </div>
+                            <div class="layer-d">
+                                <a href="http://www.archiveofphotography.com/" target="_blank">
+                                    <h4>View</h4>
+                                </a>
                             </div>
                         </div>
                         <div class="container-image-e">
-                            <div id="img-e">
-                                <div class="layer">
-                                    <a href="http://www.timeforcommongood.com/" target="_blank">
-                                        <h4>View</h4>
-                                    </a>
-                                </div>
+                            <div class="layer-e">
+                                <a href="http://www.timeforcommongood.com/" target="_blank">
+                                    <h4>View</h4>
+                                </a>
                             </div>
                         </div>
                     </div>

@@ -9,12 +9,7 @@ $prim: #ff3300
 $sec: #ff3300
 $ter: #fff
 
-%images
-    background-position: center
-    background-size: cover
-    background-repeat: no-repeat
-    height: 100%
-    width: 100%
+
 
 /* === GENERAL =========================== */
 
@@ -297,6 +292,26 @@ body
     font-family: 'Montserrat', sans-serif;
     
 /* === PORTFOLIO PAGE ================================ */
+
+%images
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    display: inline-block
+    height: 250px
+    left: -1500px
+    margin: 10px
+    position: relative
+    width: 250px
+    
+%layers
+    background-color: #000
+    border: 2px solid $prim
+    border-radius: 50%
+    box-shadow: 0px 0px 2px 2px $prim
+    height: 100%
+    opacity: 0.8
+    width: 100%
     
 .text-center h2
     color: #fff
@@ -313,64 +328,64 @@ body
     padding-bottom: 100px
     width: 90%
     
-#img-a
-    @extend %images
-    background-image: url(../img/img22.jpg)
-    
-#img-b
-    @extend %images
-    background-image: url(../img/img23.jpg)
-    
-#img-c
-    @extend %images
-    background-image: url(../img/img24.jpg)
-    
-#img-d
-    @extend %images
-    background-image: url(../img/img25.jpg)
-    
-#img-e
-    @extend %images
-    background-image: url(../img/img26.jpg)
-    
 /* Layer over images */
     
-.layer
-    background-color: #000
-    height: 100%
-    opacity: 0.9
-    width: 100%
-    
-.layer h4
-    color: #fff
-    border: 2px solid #0066ff
-    font-family: 'Montserrat', sans-serif;
-    height: 90%
-    margin: 5%
-    padding: 5%
-    position: absolute
-    width: 90%
-    
-.container-image-a,
-.container-image-b,
-.container-image-c,
-.container-image-d,
-.container-image-e
-    border: 2px solid #0066ff
-    border-radius: 2%
-    display: inline-block
-    height: 200px
-    left: -1500px
-    margin: 4px
-    position: relative
-    width: 300px
+.layer-a
+    @extend %layers
+    margin-left: -1px
 
-.layer:hover
-    opacity: 0.7
+.layer-b
+    @extend %layers
+
+.layer-c
+    @extend %layers
+    margin-left: -1px
+
+.layer-d
+    @extend %layers
+
+.layer-e
+    @extend %layers
     
-.layer h4:hover
-    padding: 10%
-    transition-duration: 0.1s
+.layer-a h4,
+.layer-b h4,
+.layer-c h4,
+.layer-d h4,
+.layer-e h4
+    color: #fff
+    font-family: 'Montserrat', sans-serif;
+    height: 100%
+    padding: 20%
+    position: absolute
+    width: 100%
+
+.container-image-a
+    @extend %images
+    background-image: url(../img/img22.png)
+
+.container-image-b
+    @extend %images
+    background-image: url(../img/img23.png)
+    
+.container-image-c
+    @extend %images
+    background-image: url(../img/img24.png)
+    
+.container-image-d
+    @extend %images
+    background-image: url(../img/img25.png)
+    
+.container-image-e
+    @extend %images
+    background-image: url(../img/img26.png)
+    
+.layer-a h4:hover,
+.layer-b h4:hover,
+.layer-c h4:hover,
+.layer-d h4:hover,
+.layer-e h4:hover
+    color: $prim
+    transition-duration: 0.3s
     transition-timing-function: ease-in-out
     
 /* === CONTACT PAGE =============================== */
@@ -482,8 +497,8 @@ textarea:focus
     .container-image-c,
     .container-image-d,
     .container-image-e
-        width: 250px
-        height: 167px
+        height: 200px
+        width: 200px
         
     .contact-left
         top: 10vh
@@ -547,33 +562,28 @@ textarea:focus
         
     #icon-1,
     #icon-2
-        bottom: 15px
+        right: 5px
         
     #icon-11,
     #icon-12
-        bottom: 20px
+        right: 95px
         
     #icon-21,
     #icon-22
-        bottom: 70px
-        right: 70px
+        right: 155px
         
     #icon-31,
     #icon-32
-        bottom: 80px
-        right: 120px
+        right: 125px
         
     #icon-41,
     #icon-42
-        right: 15px
-        bottom: 90px
+        right: 35px
         
     #icon-51,
     #icon-52
-        bottom: 30px
-        right: 105px
-        
-        
+        right: 65px
+             
 /* Max-width 992px */
 
 @media screen and (max-width: 960px)
@@ -598,13 +608,11 @@ textarea:focus
     
     #name
         font-size: 16px
-        right: 30%
-        top: 20px
         
     .name-border
         height: 70px
         width: 165px
-        right: 0
+        right: 16px
         
     .name h3
         font-size: 16px
@@ -647,6 +655,14 @@ textarea:focus
         
     .port-work
         margin-bottom: 15%
+        
+    .container-image-a,
+    .container-image-b,
+    .container-image-c,
+    .container-image-d,
+    .container-image-e
+        height: 150px
+        width: 150px
     
     .text-center h2
         font-size: 16px
@@ -657,17 +673,6 @@ textarea:focus
         
     .portfolio
         margin-top: 80px
-        
-    .container-image-a,
-    .container-image-b,
-    .container-image-c,
-    .container-image-d,
-    .container-image-e
-        height: 60px
-        width: 115px
-    
-    .layer h4
-        font-size: 12px
         
     .contact-top
         top: 10vh
@@ -725,19 +730,27 @@ textarea:focus
     .porto-text
         margin-top: 0
         
-    .text-center h2
-        font-size: 14px
-        
-    .text-center h3
-        font-size: 14px
-        
     .container-image-a,
     .container-image-b,
     .container-image-c,
     .container-image-d,
     .container-image-e
         height: 80px
-        width: 110px
+        width: 80px
+        margin: 2px
+        
+    .layer-a h4,
+    .layer-b h4,
+    .layer-c h4,
+    .layer-d h4,
+    .layer-e h4
+        font-size: 14px
+        
+    .text-center h2
+        font-size: 14px
+        
+    .text-center h3
+        font-size: 14px
         
     .contact-right
         display: none
@@ -768,8 +781,16 @@ textarea:focus
     .container-image-c,
     .container-image-d,
     .container-image-e
-        height: 60px
-        width: 100px
+        height: 80px
+        width: 80px
+        margin: 2px
+        
+    .layer-a h4,
+    .layer-b h4,
+    .layer-c h4,
+    .layer-d h4,
+    .layer-e h4
+        font-size: 14px
         
     .contact-left p
         font-size: 12px

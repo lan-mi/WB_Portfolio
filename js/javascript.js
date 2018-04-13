@@ -62,7 +62,7 @@ $(document).ready(function () {
         }
     });
     $('#name').delay(3000).animate({
-        right: '4%'
+        right: '38px'
     });
 });
 

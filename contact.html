@@ -33,7 +33,12 @@
         </div>
     </div>
     <div class="body">
-        <img src="img/114.jpg" class="cover-img">
+        <picture>
+            <source media="(max-width: 1024px)" srcset="img/114-a.jpg">
+            <source media="(max-width: 768px)" srcset="img/114-b.jpg">
+            <source media="(max-width: 576px)" srcset="img/114-c.jpg">
+            <img src="img/114.jpg" class="cover-img">
+        </picture>
         <div class="now">
             <div id="menu-toggle" class="menu-toggle" onclick="openNav()">
                 <div class="menu1"></div>
