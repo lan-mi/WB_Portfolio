@@ -3,15 +3,55 @@
    font-family: 'Open Sans', sans-serif;
    font-family: 'Varela Round', sans-serif; */
 
-/* variables */
+/* Variables */
 
 $prim: #ff3300
 $sec: #ff3300
 $ter: #fff
 
+/* Extend */
 
+%images
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    display: inline-block
+    height: 250px
+    left: -1500px
+    margin: 10px
+    position: relative
+    width: 250px
+    
+%layers
+    background-color: #000
+    border: 2px solid $prim
+    border-radius: 50%
+    box-shadow: 0px 0px 2px 2px $prim
+    height: 100%
+    opacity: 0.8
+    width: 100%
 
 /* === GENERAL =========================== */
+
+/* JS loader */
+
+.no-js #loader
+    display: none
+    
+.js #loader
+    display: block
+    position: absolute
+    left: 100px 
+    top: 0
+    
+.se-pre-con
+	position: fixed
+	left: 0px
+	top: 0px
+	width: 100%
+	height: 100%
+	z-index: 9999
+	background: url(../img/preloader_2.gif) center no-repeat #fff
 
 /* Sendwich menu 3 bars */
 
@@ -149,7 +189,6 @@ body
     width: 100vw
     z-index: -3
 
-   
 /* Landing page DIV with opacity overlay */
     
 .now
@@ -292,26 +331,6 @@ body
     font-family: 'Montserrat', sans-serif;
     
 /* === PORTFOLIO PAGE ================================ */
-
-%images
-    background-position: center
-    background-size: cover
-    background-repeat: no-repeat
-    display: inline-block
-    height: 250px
-    left: -1500px
-    margin: 10px
-    position: relative
-    width: 250px
-    
-%layers
-    background-color: #000
-    border: 2px solid $prim
-    border-radius: 50%
-    box-shadow: 0px 0px 2px 2px $prim
-    height: 100%
-    opacity: 0.8
-    width: 100%
     
 .text-center h2
     color: #fff
@@ -728,6 +747,8 @@ body
     .contact-top
         top: 18vh
         
+/* Max-height 480px */
+        
 @media screen and (max-height: 480px)
     
     .about-left
@@ -768,32 +789,3 @@ body
         
     .contact-left p
         font-size: 10px
-        
-
-
-        
-        
-        
-    
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
-        
-        
-        
-        
-            
-            
-            
-            
-

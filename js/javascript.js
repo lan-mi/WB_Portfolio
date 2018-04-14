@@ -1,3 +1,9 @@
+/* Preloader */
+
+$(document).ready(function () {
+    $('.se-pre-con').fadeOut('slow');
+});
+
 /* Fullsreen navigation */
 
 function openNav() {
@@ -62,7 +68,7 @@ $(document).ready(function () {
         }
     });
     $('#name').delay(3000).animate({
-        right: '38px'
+        right: "38px"
     });
 });
 
@@ -71,7 +77,7 @@ $(document).ready(function () {
 var textArray = ["learning!", "new technologies!", "web development!"];
 var index = 0;
 setInterval(function () {
-    $("#main-animate").animate({
+    $('#main-animate').animate({
         opacity: 0
     }, function () {
         if (textArray.length > index) {
@@ -188,7 +194,7 @@ function cycle(id) {
 }
 cycle("icon-1", 0);
 
-/* ---------------   */
+/* --------------- */
 
 var longTime = 5200;
 
@@ -203,7 +209,7 @@ function cycle1(id) {
 }
 cycle1("icon-11", 0);
 
-/* -------------------   */
+/* ------------------- */
 
 var longTime1 = 4700;
 
